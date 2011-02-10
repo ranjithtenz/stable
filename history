@@ -1,0 +1,1001 @@
+ranjith@client:~$ history 
+  266  ls
+  267  cd cgi-bin/
+  268  ls
+  269  cd webnotes/
+  270  ls
+  271  sudo gedit defs.py 
+  272  cd ..
+  273  python
+  274  ls
+  275  cd webnotes/
+  276  ls
+  277  sudo gedit defs.py 
+  278  cd ..
+  279  python
+  280  ls
+  281  python
+  282  cd 
+  283  cd /var/www/webnotes-stable/v170/
+  284  ls
+  285  cd cgi-bin/
+  286  python
+  287  ls
+  288  cd webnotes/
+  289  ls
+  290  gedit defs.py
+  291  cd ..
+  292  python
+  293  sudo /etc/init.d/apache2 restart
+  294  exit
+  295  sudo /etc/init.d/apache2 stop
+  296  sudo /etc/init.d/apache2 start
+  297  ls
+  298  cd /etc/
+  299  ls
+  300  tail /var/log/apache2/access.log
+  301  do tail /var/log/apache2/access.log
+  302  sudo gedit /var/log/apache2/access.log
+  303  sudo /etc/init.d/apache2 restart
+  304  cd 
+  305  ls
+  306  cd /var/www/
+  307  ls
+  308  rsync -av stable /home/ranjith/Sand-Box/WNframeWork/
+  309  ls
+  310  exit
+  311  ssh mahendra@192.168.1.178
+  312  sudo tail /var/log/apache2/access.log
+  313  cd /var/www/
+  314  ls
+  315  cd stable/
+  316  chmod +x v170/
+  317  cd v170/
+  318  ls
+  319  cd ..
+  320  chmod -r v170/
+  321  chmod 777 v170 -r
+  322  chmod 777 /v170 -r
+  323  cd v170/
+  324  chmod 777 *
+  325  cd ../
+  326  chmod 777 v170 -r
+  327  chmod 777 /v170 -r
+  328  chmod 777 /v170 -R
+  329  ls
+  330  chmod 777 v170 -R
+  331  sudo chmod 777 /var/www/stable/v170 -r
+  332  history
+  333  git config --global user.name "Your Name"
+  334  git config --global user.name "Ranjith Kumar"
+  335  git config --global user.email ranjith.k@sedin.co.in
+  336  cd WebNotes-FrameWork/
+  337  git init
+  338  touch README
+  339  git add README
+  340  git commit -m 'First Commit'
+  341  git remote add origin git@github.com:railsfactory-ranjithkumar/WebNotes-FrameWork.git
+  342  git push orgin master
+  343  git push origin master
+  344  ls
+  345  cd v170/
+  346  ls
+  347  cd backups/
+  348  ls
+  349  cd ..
+  350  ls
+  351  git add trunk/
+  352  git commit -m 'Trunk'
+  353  git remote add origin git@github.com:railsfactory-ranjithkumar/WebNotes-FrameWork.git
+  354  git remote add origin git@github.com:railsfactory-railsfactory/WebNotes-FrameWork.git
+  355  git push origin master 
+  356  git add v170/
+  357  git remote add origin git@github.com:railsfactory-railsfactory/WebNotes-FrameWork.git
+  358  git push origin master 
+  359  git add v170/
+  360  git remote add origin git@github.com:railsfactory-railsfactory/WebNotes-FrameWork.git
+  361  git push origin master 
+  362  mobile_app_dev/Titanium_Developer-1.2.1/Titanium\ Developer 
+  363  wget -r http://www.meetup.com/
+  364  exit
+  365  ls
+  366  rm -rf www.meetup.com/
+  367  ls
+  368  sudo apt-get install emma
+  369  cd WebNotes-FrameWork/
+  370  ls
+  371  find -name ".svn" .
+  372  find . -name ".svn" 
+  373  find -name "\.svn" 
+  374  find -name "\.svn" -exec rm -rf {} \;
+  375  find -name "\.svn" 
+  376  ls
+  377  git init 
+  378  git add .
+  379  cd ..
+  380  git config --global user.name "Ranjith Kumar"
+  381  git config --global user.email ranjith.k@sedin.co.in
+  382  cd WebNotes-FrameWork/
+  383  git init
+  384  ls
+  385  git add README trunk/ v170/
+  386  git commit -m 'first Commit'
+  387  git remote add origin git@github.com:railsfactory-ranjithkumar/WebNotes-FrameWork.git
+  388  git push origin master
+  389  df -h
+  390  exit
+  391  ls
+  392  mkdir web-sheet
+  393  cd web-sheet/
+  394  wget -r http://gitimmersion.com/
+  395  wget -r http://gitimmersion.com
+  396  wget -R http://gitimmersion.com
+  397  wget -r http://gitimmersion.com/
+  398  gnom
+  399  gconf-editor 
+  400  ls
+  401  cd Sand-Box/
+  402  ls
+  403  cd mobile_app_dev/
+  404  ls
+  405  cd Titanium_Samples_Dev/
+  406  ls
+  407  git clone git://github.com/devpg/mobileTranslator.git
+  408  ls
+  409  cd ..
+  410  ls
+  411  cd 
+  412  mobile_app_dev/Titanium_Developer-1.2.1/Titanium\ Developer 
+  413  ls
+  414  cd WebNotes-FrameWork/
+  415  ls
+  416  mkdir gitversion
+  417  cd gitversion/
+  418  git clone git://github.com/rmehta/wnframework.git
+  419  cd ..
+  420  cd /var/www/
+  421  ls
+  422  cd webnotes-latest/
+  423  ls
+  424  svn checkout http://wnframework.googlecode.com/svn/trunk/v170/
+  425  cd ..
+  426  cd webnotes-latest/
+  427  ls
+  428  svn checkout http://wnframework.googlecode.com/svn/trunk/
+  429  cd v170/
+  430  ls
+  431  cd cgi-bin/
+  432  ls
+  433  cd webnotes/
+  434  ls
+  435  sudo gedit db.py
+  436  sudo gedit defs.py
+  437  cd ..
+  438  python
+  439  cd Sand-Box/mobile_app_dev/Titanium_Samples_Dev/KitchenSink/
+  440  ls
+  441  la
+  442  du -hs
+  443  ls
+  444  cd Sand-Box/
+  445  ls
+  446  cd ..
+  447  ls
+  448  cd Sand-Box/
+  449  ls
+  450  cd Sudoku/
+  451  ls
+  452  gedit sudoku.rb 
+  453  ruby sudoku.rb 
+  454  21312....124..124.12....214
+  455  ruby sudoku.rb 
+  456  gedit sudoku.rb 
+  457  ls
+  458  rm -rf abc.html 
+  459  ls
+  460  exit
+  461  ping www.google.com
+  462  rsync -av /home/ranjith/Ranjith\(RnD\)/Music saranya@192.168.1.161:/home/saranya/
+  463  rsync -av /home/ranjith/Ranjith\(RnD\)/Music magesh@192.168.1.175:/home/magesh/
+  464  eixt
+  465  exit
+  466  cd ..
+  467  ls
+  468  cd /var/www/stable/
+  469  ls
+  470  cd v170/
+  471  ls
+  472  cd cgi-bin/
+  473  ls
+  474  gedit setup.py
+  475  cd webnotes/
+  476  ls
+  477  cd modules/
+  478  ls
+  479  exit
+  480  history 
+  481  cd /var/lib/
+  482  ls
+  483  sudo su
+  484  exit
+  485  cd 
+  486  sudo su
+  487  cd 
+  488  ls -al
+  489  ls
+  490  cd /var/lib/
+  491  ls
+  492  cd mysql/
+  493  sudo su
+  494  cd 
+  495  cd /var/www/stable/v170/cgi-bin/
+  496  python
+  497  exit
+  498  ls
+  499  cd /var/www/stable/v170/cgi-bin/
+  500  python
+  501  sudo /etc/init.d/apache2 restart
+  502  cd ..
+  503  rsync -av stable /home/ranjith/web-sheet/
+  504  cd ..
+  505  cd lib/
+  506  sudo su
+  507  sudo nautilus
+  508  cd 
+  509  sudo apt-get install gnome2-globalmenu
+  510  sudo apt-get install gnome-globalmenu 
+  511  sudo add-apt-repository ppa:globalmenu-team/ppa
+  512  sudo apt-get update
+  513  sudo apt-get install gnome-globalmenu
+  514  sudo nautilus
+  515  ls
+  516  rsync -av web-sheet /media/MAGEH/
+  517  exit
+  518  sudo su
+  519  exit
+  520  rsync -av /home/ranjith/Desktop/Titanium-Resources/packages/Titanium\ Developer.tgz saranya@192.168.1.161:/home/saranya/
+  521  exit
+  522  ls
+  523  cd Sand-Box/
+  524  ls
+  525  cd Research-Work/
+  526  ls
+  527  cd Unicorn/
+  528  ls
+  529  cd Unicorn-
+  530  cd Unicorn-Workspace/
+  531  ls
+  532  cd jar-type/
+  533  ls
+  534  cd unicorn/
+  535  ls
+  536  cd dist/
+  537  ls
+  538  cd cli/
+  539  ls
+  540  java -jar unicorn.jar ucn_task=conformance ucn_uri=http://www.w3.org
+  541  java -jar unicorn.jar ucn_task=conformance ucn_uri=http://www.google.com
+  542  exit
+  543  cd Sand-Box/Research-Work/Unicorn/Unicorn-Workspace/jar-type/unicorn/dist/cli/
+  544  exit
+  545  cd /Sand-Box/Research-Work/Unicorn/Unicorn-Workspace/jar-type/unicorn/dist/e
+  546  exit
+  547  cd Sand-Box/Research-Work/Unicorn/Unicorn-Workspace/jar-type/unicorn/dist/cli/
+  548  java -jar unicorn.jar ucn_task=conformance ucn_uri=http://geexhq.com
+  549  pwd
+  550  ls
+  551  ruby unicorn.rb 
+  552  ls
+  553  ./unicorn .sh
+  554  sh unicorn.sh
+  555  ./unicorn.sh
+  556  rm -rf unicorn.sh 
+  557  cd Sand-Box/
+  558  cd ruby-script/
+  559  ls
+  560  ruby shell.rb 
+  561  ruby sample.rb 
+  562  gedit sample.rb 
+  563  ruby unicorn.rb 
+  564  ls
+  565  rm -rf folder/ Ranjith/
+  566  ls
+  567  mv unicorn.rb /home/ranjith/
+  568  cd 
+  569  ls
+  570  ruby unicorn.rb 
+  571  ls
+  572  ruby unicorn.rb 
+  573  gedit unicorn.rb 
+  574  ruby unicorn.rb 
+  575  gedit unicorn.rb 
+  576  ruby unicorn.rb 
+  577  gedit unicorn.rb 
+  578  ruby unicorn.rb 
+  579  gedit unicorn.rb 
+  580  mv unicorn.rb Sand-Box/Research-Work/Unicorn/Unicorn-Workspace/jar-type/unicorn/
+  581  cd Sand-Box/Research-Work/Unicorn/Unicorn-Workspace/jar-type/unicorn/dist/cli/
+  582  java -jar unicorn.jar ucn_task=conformance ucn_uri=http://www.google.com
+  583  cd ..
+  584  ls
+  585  ruby unicorn.rb 
+  586  gedit unicorn.rb 
+  587  mv unicorn.rb dist/cli/
+  588  cd dist/cli/
+  589  ls
+  590  ruby unicorn.rb 
+  591  mv unicorn.rb ../
+  592  ls
+  593  cd ..
+  594  ls
+  595  gedit unicorn.rb 
+  596  ruby unicorn.rb 
+  597  ls
+  598  mv unicorn.rb cli/
+  599  cd cli/
+  600  ls
+  601  ruby unicorn.rb 
+  602  gedit unicorn.rb 
+  603  gedit unicorn.rb google.com
+  604  ruby unicorn.rb google.com
+  605  gedit unicorn.rb google.com
+  606  ls
+  607  ruby unicorn.rb 
+  608  ls
+  609  gedit unicorn.rb 
+  610  ruby unicorn.rb 
+  611  gedit unicorn.rb 
+  612  ruby unicorn.rb 
+  613  gedit unicorn.rb 
+  614  ruby unicorn.rb google.com
+  615  gedit unicorn.rb 
+  616  chmod +x unicorn.rb 
+  617  ./unicorn.rb google.com
+  618  ./unicorn.rb www.google.com
+  619  ./unicorn.rb www.geexhq.com
+  620  mv unicorn.rb unicorn
+  621  ls
+  622  ./unicorn www.google.com
+  623  pwd
+  624  gedit unicorn
+  625  mv unicorn /usr/bin/
+  626  sudo mv unicorn /usr/bin/
+  627  unicorn www.google.com
+  628  unicorn www.geexhq.com
+  629  exit
+  630  cd Sand-Box/
+  631  ls
+  632  cd mobile_app_dev/
+  633  ls
+  634  mkdir magesh
+  635  exit
+  636  git clone git://github.com/railsfactory-priya/Titanium-Demo.git
+  637  ls
+  638  rsync -av Titanium-Demo saranya@192.168.1.173:/home/saranya/
+  639  rsync -av Titanium-Demo saranya@192.168.1.161:/home/saranya/
+  640  ls
+  641  rm -rf Titanium-Demo/
+  642  ls
+  643  cd /var/www/
+  644  ls
+  645  cd stable/
+  646  ls
+  647  cd trunk/
+  648  ls
+  649  cd Material\ Management/
+  650  ls
+  651  cd Item\ Group/
+  652  ls
+  653  nautilus .
+  654  cd 
+  655  exit
+  656  cd /media/MetalBig/
+  657  ls
+  658  cp -rf /home/ranjith/Sand-Box/Research-Work .
+  659  rsync -av /home/ranjith/Sand-Box/Research-Work .
+  660  exit
+  661  mkdir geexHQ
+  662  cd geexHQ/
+  663  wget http://programmers.stackexchange.com/questions/1599/what-real-life-bad-habits-has-programming-given-you?page=1&tab=votes#tab-top
+  664  wget http://programmers.stackexchange.com/questions/1599/what-real-life-bad-habits-has-programming-given-you?page=2&tab=votes#tab-top
+  665  wget http://programmers.stackexchange.com/questions/1599/what-real-life-bad-habits-has-programming-given-you?page=3&tab=votes#tab-top
+  666  wget http://www.metafilter.com/78728/Q-Would-you-like-tea-OR-coffee-A-Yes
+  667  wget http://www.quora.com/What-are-some-real-life-bad-habits-that-programming-gives-people
+  668  exit
+  669  cd WebNotes-FrameWork/
+  670  mkdir git
+  671  cd git
+  672  git clone git://github.com/railsfactory/wnframework.git
+  673  exit
+  674  cd /var/www/
+  675  ls
+  676  cd webnotes-latest/
+  677  ls
+  678  cd v170/
+  679  ls
+  680  gedit INSTALL.txt 
+  681  cd ..
+  682  svn checkout http://wnframework.googlecode.com/svn/trunk/v170/
+  683  svn checkout http://wnframework-modules.googlecode.com/svn/trunk/
+  684  ls
+  685  cd ..
+  686  rsync -av webnotes-latest magesh@192.168.1.175:/home/magesh/
+  687  cd stable/v170/cgi-bin/webnotes/
+  688  ls
+  689  gedit defs.py
+  690  exit
+  691  sudo /etc/init.d/apache2 reload
+  692  cd mobile_app_dev/android-sdk-linux_x86/tools/
+  693  ./mksdcard 1024M my1024mbCard
+  694  sudo mkdir /media/mycard
+  695  sudo mount -o loop my1024mbCard /media/mycard
+  696  sudo umount /media/mycard/
+  697  ./android create avd --name myAVD --target 2 --sdcard my1024mbCard 
+  698  ./emulator -avd myAVD
+  699  ls
+  700  cd ..
+  701  ls
+  702  cd platform-tools/
+  703  ls
+  704  cd ..
+  705  cd platform
+  706  cd platforms/
+  707  ls
+  708  cd ..
+  709  ./android create avd --name myAVD --target 7 --sdcard my1024mbCard 
+  710  cd tools/
+  711  ./android create avd --name myAVD --target 7 --sdcard my1024mbCard 
+  712  ./android create avd --name myAVD1 --target 7 --sdcard my1024mbCard 
+  713  ./emulator -avd myAVD1
+  714  ls
+  715  gedit my1024mbCard 
+  716  ./emulator -avd myAVD
+  717  ./mksdcard 2048M my2048MBCard
+  718  sudo mount -o loop my2048MBCard /media/mycard
+  719  sudo umount /media/mycard/
+  720  ./android create avd --name myAVD --target 7 --sdcard my2048MbCard
+  721  ls
+  722  ./android create avd --name myAVD2 --target 7 --sdcard my2048MbCard
+  723  ./android create avd --name myAVD2 --target 7 --sdcard my2048MCard
+  724  find -x tomcat.xml
+  725  find tomcat.xml
+  726  cd /usr/
+  727  ls
+  728  cd bin/
+  729  ls
+  730  cd 
+  731  gedit /etc/tomcat6/tomcat-users.xml 
+  732  sudo gedit /etc/tomcat6/tomcat-users.xml 
+  733  gedit ~/.bashrc 
+  734  gedit ~/.bash_history 
+  735  whereis tomcat
+  736  ls
+  737  cd /
+  738  ls
+  739  cd var/lib/
+  740  ls
+  741  cd tomcat6/
+  742  ls
+  743  cd common/
+  744  ls
+  745  cd classes/
+  746  ls
+  747  cd ..
+  748  ls
+  749  cd ..
+  750  ls
+  751  cd conf
+  752  ls
+  753  cd ..
+  754  ls
+  755  cd server/
+  756  ls
+  757  cd classes/
+  758  ls
+  759  cd ..
+  760  ls
+  761  cd ..
+  762  ls
+  763  cd shared/
+  764  ls
+  765  cd classes/
+  766  ls
+  767  cd ..
+  768  ls
+  769  cd webapps/
+  770  ls
+  771  cd unicorn/
+  772  ls
+  773  cd 
+  774  cd Downloads/
+  775  ls
+  776  cd ..
+  777  ls
+  778  cd Sand-Box/Research-Work/
+  779  ls
+  780  cd Unicorn/
+  781  ls
+  782  cd Unicorn-
+  783  cd Unicorn-Downloads/
+  784  ls
+  785  java -jar css-validator.jar http://www.w3.org/
+  786  java -jar css-validator.jar http://www.w3.org/. 
+  787  ls
+  788  java -jar css-validator.jar 
+  789  cd ..
+  790  ls
+  791  cd Unicorn-Workspace/
+  792  ls
+  793  cd Jigsaw/
+  794  ls
+  795  cd classes/
+  796  ls
+  797  cd ..
+  798  cd Unicorn-Downloads/
+  799  ls
+  800  CVSROOT=:pserver:anonymous@dev.w3.org:/sources/public cvs login
+  801  CVSROOT=:pserver:anonymous@dev.w3.org:/sources/public cvs checkout 2002/css-validator
+  802  cp -rf 2002 /home/ranjith/Sand-Box/Research-Work/Unicorn/Unicorn-Workspace/
+  803  ls
+  804  java -jar css-validator.jar --output=soap12 http://www.w3.org/
+  805  cd tmp/
+  806  ls
+  807  cd xerces-2_11_0/
+  808  ls
+  809  exit
+  810  cd ..
+  811  cd Unicorn-Workspace/
+  812  ls
+  813  cd 2002/
+  814  ls
+  815  cd css-validator/
+  816  ls
+  817  mkdir lib
+  818  cp /home/ranjith/Sand-Box/Research-Work/Unicorn/Unicorn-Workspace/Jigsaw/classes/servlet.jar lib
+  819  cd lib/
+  820  ls
+  821  cd ..
+  822  ant jar
+  823  echo $JAVA_HOME
+  824  export JAVA_HOME=/usr/lib/jvm/java-6-sun-1.6.0.20/bin/java
+  825  ant jar
+  826  ls
+  827  ant jar
+  828  sudo su
+  829  exit
+  830  cd 
+  831  ls
+  832  cd Sand-Box/
+  833  ls
+  834  cd Research-Work/
+  835  ls
+  836  cd Unicorn/
+  837  ls
+  838  cd Unicorn-Workspace/
+  839  ls
+  840  CVSROOT=:pserver:anonymous@dev.w3.org:/sources/public
+  841  CVSROOT=:pserver:anonymous@dev.w3.org:/sources/public cvs login
+  842  CVSROOT=:pserver:anonymous@dev.w3.org:/sources/public cvs checkout foo/bar
+  843  sudo apt-get install cvs
+  844  CVSROOT=:pserver:anonymous@dev.w3.org:/sources/public cvs login
+  845  CVSROOT=:pserver:anonymous@dev.w3.org:/sources/public cvs checkout src/
+  846  sudo su
+  847  e3xirt
+  848  exit
+  849  cd 
+  850  gedit style.css
+  851  gedit /usr/bin/
+  852  cd /usr/bin/
+  853  ls
+  854  gedit unicorn 
+  855  cd ..
+  856  ls
+  857  cd jar-type/
+  858  cd unicorn/
+  859  ls
+  860  cd dist/
+  861  ls
+  862  cd cli/
+  863  ls
+  864  unicorn www.geexhq.com
+  865  cd 
+  866  ls
+  867  ls
+  868  mv ebooks Ranjith\(RnD\)/
+  869  cd Ranjith\(RnD\)/
+  870  ls
+  871  cd ..
+  872  cd Sand-Box/Research-Work/Unicorn/Unicorn-Downloads/
+  873  ls
+  874  cd WDG/
+  875  ls
+  876  java -jar W3cMarkupValidationFilter-1.0.2.jar http://localhost:8080/
+  877  cd ..
+  878  ls
+  879  cd ..
+  880  cd Unicorn-Workspace/
+  881  ls
+  882  cd 2002/
+  883  ls
+  884  cd css-validator/
+  885  ls
+  886  java -jar css-validator.jar /home/ranjith/style.css 
+  887  java -jar css-validator.jar 
+  888  java -jar css-validator.jar /home/ranjith/style.css 
+  889  java -jar css-validator.jar http://localhost:8080/
+  890  java -jar css-validator.jar http://localhost/
+  891  java -jar css-validator.jar file:/home/ranjith/style.css 
+  892  java -jar css-validator.jar -profile file:/home/ranjith/style.css 
+  893  java -jar css-validator.jar -medium MEDIUM file:/home/ranjith/style.css 
+  894  java -jar css-validator.jar -medium all file:/home/ranjith/style.css 
+  895  cd ..
+  896  tar zxvf sgml-lib.tar.gz 
+  897  ls
+  898  tar zxvf validator.tar.gz 
+  899  cd validator-1.1/
+  900  mv htdocs share httpd/cgi-bin /usr/local/validator
+  901  sudo mv htdocs share httpd/cgi-bin /usr/local/validator
+  902  cd /usr/local/validator/
+  903  ls
+  904  cd /etc/
+  905  ls
+  906  cd w3c/
+  907  ls
+  908  sudo cp -rf /usr/local/validator/htdocs/config/* .
+  909  ls
+  910  sudo rm -rf *
+  911  ls
+  912  sudo cp -rf /usr/local/validator/htdocs/config/* .
+  913  ls
+  914  sudo gedit validator.conf 
+  915  cd /usr/local/validator/
+  916  cd cgi-bin/
+  917  ./check uri=http://geexhq.com
+  918  ./check uri=http://localhost/
+  919  ./check uri=http://localhost:8080/
+  920  ls
+  921  cd 
+  922  cd /usr/local/validator/cgi-bin/
+  923  ./check uri=http://localhost/stable/v170/
+  924  cd ..
+  925  c d..
+  926  cd ..
+  927  cd Unicorn-Downloads/
+  928  hg clone https://dvcs.w3.org/hg/css-val
+  929  cd css-val/
+  930  ls
+  931  gedit README
+  932  sbt test
+  933  ls
+  934  cd ..
+  935  cd Unicorn-Workspace/scalatest-1.2/
+  936  scala -classpath scalatest-1.0.jar org.scalatest.tools.Runner -p "scalatest-1.0-tests.jar" -o -s org.scalatest.SuiteSuite
+  937  sudo scala -classpath scalatest-1.0.jar org.scalatest.tools.Runner -p "scalatest-1.0-tests.jar" -o -s org.scalatest.SuiteSuite
+  938  java -jar scalatest-1.2-tests.jar 
+  939  sudo scala -classpath scalatest-1.2.jar org.scalatest.tools.Runner -p "scalatest-1.2-tests.jar" -o -s org.scalatest.SuiteSuite
+  940  scala -classpath scalatest-1.2.jar org.scalatest.tools.Runner -p "scalatest-1.2-tests.jar" -o -s org.scalatest.SuiteSuite
+  941  cd ..
+  942  cd Unicorn-Downloads/
+  943  ls
+  944  cd WDG/
+  945  ls
+  946  validate foo.html
+  947  ./validate 
+  948  validate --help
+  949  cd ..
+  950  svn checkout http://feedvalidator.googlecode.com/svn/trunk/feedvalidator
+  951  cd feedvalidator/
+  952  ls
+  953  python src/demo.py http://feeds.feedburner.com/IDontKnowWhereImFrom?format=xml
+  954  python src/validtest.py http://feeds.feedburner.com/IDontKnowWhereImFrom?format=xml
+  955  ls
+  956  python src/validtest.py /home/ranjith/Sand-Box/Research-Work/Unicorn/Unicorn-Workspace/2002/css-validator/build.xml 
+  957  python src/demo.py /home/ranjith/Sand-Box/Research-Work/Unicorn/Unicorn-Workspace/2002/css-validator/build.xml 
+  958  python src/demo.py http://geexhq.com/feed/
+  959  python src/demo.py http://localhost/
+  960  python src/demo.py http://localhost:8080/
+  961  python src/demo.py http://localhost:8080/unicorn/
+  962  python src/validtest.py http://localhost:8080/
+  963  cd src/
+  964  ls
+  965  cd ..
+  966  ls
+  967  gedit README 
+  968  ls
+  969  python src/demo.py http://localhost:8080/unicorn/
+  970  cd src/
+  971  ls
+  972  ./setup.py 
+  973  java -jar css-validator.jar -medium all file:/home/ranjith/style.css
+  974  java -jar css-validator.jar -medium aural file:/home/ranjith/style.css
+  975  java -jar css-validator.jar -medium braille file:/home/ranjith/style.css
+  976  java -jar css-validator.jar -medium embossed file:/home/ranjith/style.css
+  977  java -jar css-validator.jar -medium handheld file:/home/ranjith/style.css
+  978  java -jar css-validator.jar -medium print file:/home/ranjith/style.css
+  979  java -jar css-validator.jar -medium projection file:/home/ranjith/style.css
+  980  java -jar css-validator.jar -medium screen file:/home/ranjith/style.css
+  981  java -jar css-validator.jar -warning 1 file:/home/ranjith/style.css
+  982  java -jar css-validator.jar -warning 0 file:/home/ranjith/style.css
+  983  ls
+  984  pwd
+  985  cd /usr/local/validator/
+  986  ls
+  987  cd share/
+  988  ls
+  989  cd templates/
+  990  ls
+  991  cd en_US/
+  992  ls
+  993  cd ..
+  994  ls
+  995  cd ..
+  996  ls
+  997  cd htdocs/
+  998  cd ..
+  999  rm -rf *
+ 1000  sudo rm -rf *
+ 1001  ls
+ 1002  cd /usr/local/validator/
+ 1003  ls
+ 1004  cd 
+ 1005  git config --global user.name "Ranjith"
+ 1006  git config --global user.email ranjith.k@sedin.co.in
+ 1007  cd mkdir github
+ 1008  mkdir github
+ 1009  cd github/
+ 1010  mkdir SandBox
+ 1011  git init
+ 1012  touch README
+ 1013  git add README
+ 1014  git commit -m 'Read Me file'
+ 1015  git remote add origin git@github.com:railsfactory-ranjithkumar/SandBox.git
+ 1016  git push origin master
+ 1017  ls
+ 1018  mv README SandBox/
+ 1019  cd SandBox/
+ 1020  git init
+ 1021  git add README
+ 1022  git commit -m 'first commit'
+ 1023  git remote add origin git@github.com:railsfactory-ranjithkumar/SandBox.git
+ 1024  git push origin master
+ 1025  cd ..
+ 1026  rm -rf SandBox/
+ 1027  git config --global user.name "Ranjith"
+ 1028  git config --global user.email ranjith.k@sedin.co.in
+ 1029  mkdir Sandbox
+ 1030  cd Sandbox/
+ 1031  git init
+ 1032  touch README
+ 1033  git add README
+ 1034  git commit -m 'Readme File'
+ 1035  git remote add origin git@github.com:railsfactory-ranjithkumar/Sandbox.git
+ 1036  git push origin master
+ 1037  mkdir Unicorn
+ 1038  cd Unicorn/
+ 1039  cd Sand-Box/Research-Work/Unicorn/Unicorn-Workspace/
+ 1040  ls
+ 1041  cd Op
+ 1042  cd openSP-1.5.2/
+ 1043  ls
+ 1044  ./configure
+ 1045  ./configure --enable-http --disable-doc-build
+ 1046  make
+ 1047  make install
+ 1048  sudo make installll
+ 1049  sudo make install
+ 1050  perl -MCPAN -e shell
+ 1051  gedit ~/.bash_history 
+ 1052  cd Sand-Box/Research-Work/Unicorn/Unicorn-Workspace/jar-type/unicorn/dist/cli/
+ 1053  ls
+ 1054  cd ..
+ 1055  ls
+ 1056  cd ..
+ 1057  ls
+ 1058  cd src/
+ 1059  l
+ 1060  ls
+ 1061  cd org/
+ 1062  ls
+ 1063  cd w3c/
+ 1064  ls
+ 1065  cd unicorn/
+ 1066  ls
+ 1067  nano UnicornCall.java 
+ 1068  cd response/
+ 1069  ls
+ 1070  nano Response.java 
+ 1071  nano ResponseFactory.java
+ 1072  nano Message.java 
+ 1073  nano Group.java 
+ 1074  nano Context.java 
+ 1075  cd impl/
+ 1076  ls
+ 1077  nano DefaultContextXBeans.java 
+ 1078  exit
+ 1079  sudo gem install ruby-debug -y
+ 1080  irb
+ 1081  openssl genrsa -out domainname.key 1024
+ 1082  chmod 600 domainname.key 
+ 1083  openssl req -new -key domainname.key -out domainname.csr
+ 1084  mkdir priya
+ 1085  cd pr
+ 1086  cd priya/
+ 1087  wget -r http://www.w3schools.com/jquery/
+ 1088  ls
+ 1089  cd www.w3schools.com/
+ 1090  ls
+ 1091  cd jquery/
+ 1092  ls
+ 1093  cd ..
+ 1094  rm -rf www.w3schools.com/
+ 1095  wget \http://www.w3schools.com/jquery/
+ 1096  cd ../../
+ 1097  cd ../
+ 1098  cd 
+ 1099  cd Sand-Box/Research-Work/
+ 1100  ls
+ 1101  cd ruby/
+ 1102  ls
+ 1103  ./spidr-site.rb http://geexhq.com
+ 1104  ruby spidr-site.rb http://geexhq.com
+ 1105  ruby spidr-site.rb 
+ 1106  eit
+ 1107  exit
+ 1108  wget      --recursive      --no-clobber      --page-requisites      --html-extension      --convert-links      --restrict-file-names=windows      --domains website.org      --no-parent http://www.w3schools.com/jquery/
+ 1109  rm -rf www.w3schools.com/
+ 1110  cd Sand-Box/Research-Work/Unicorn/Unicorn-Workspace/jar-type/
+ 1111  ls
+ 1112  cd unicorn/
+ 1113  ls
+ 1114  cd dist/cli/
+ 1115  unicorn http://hootsuite.com/
+ 1116  exit
+ 1117  sudo add-apt-repository ppa:shnatsel/gimp-paint-studio
+ 1118  sudo apt-get update
+ 1119  sudo apt-get install gimp-paint-studio
+ 1120  exirt
+ 1121  exit
+ 1122  cd a
+ 1123  cd mobile_app_dev/android-sdk-linux_x86/tools/
+ 1124  ls
+ 1125  ./android 
+ 1126  exit
+ 1127  sudo apt-get install w3c-markup-validator
+ 1128  sudo gedit /etc/w3c/validator.conf
+ 1129  cd /usr/local/validator/
+ 1130  ls
+ 1131  cd share/templates/
+ 1132  ls
+ 1133  cd en_US/
+ 1134  ls
+ 1135  git clone git@github.com:railsfactory-ranjithkumar/penny.git
+ 1136  cd penny/
+ 1137  ls
+ 1138  gem install penny
+ 1139  sudo gem install penny
+ 1140  ruby --version
+ 1141  sudo apt-get install ruby1.9.1-full
+ 1142  exit
+ 1143  sudo gem install penny
+ 1144  cd penny/
+ 1145  gem install penny
+ 1146  sud ogem install penny
+ 1147  sudo gem install penny
+ 1148  bundle
+ 1149  ls
+ 1150  rake test 
+ 1151  cd test/
+ 1152  ls
+ 1153  rake test_book.rb 
+ 1154  ruby test_book.rb 
+ 1155  gedit test_book.rb 
+ 1156  ruby test_book.rb 
+ 1157  gedit test_book.rb 
+ 1158  sudo /etc/init.d/apache2 restart
+ 1159  gedit /etc/apache2/conf.d/w3c-markup-validator.conf 
+ 1160  sudo apt-get remove w3c-markup-validator 
+ 1161  sudo /etc/init.d/apache2 restart
+ 1162  sudo /etc/init.d/apache2 stop
+ 1163  sudo /etc/init.d/apache2 start
+ 1164  sudo gedit /etc/apache2/apache2.conf 
+ 1165  sudo /etc/init.d/apache2 restart
+ 1166  exit
+ 1167  sudo gedit w3c-markup-validator.conf 
+ 1168  ab -n 1000 -c 5 http://facebook.com
+ 1169  ab -n 1000 -c 5 http://facebook.com/
+ 1170  ab -n 1000 -c 5 http://facebook.com/ranjithtenz/
+ 1171  ab -n 1000 -c 5 http://localhost:8080/
+ 1172  ab -n 1000 -c 5 http://rubygeeks.com/
+ 1173  ab -n 1000 -c 5 http://localhost:8000/
+ 1174  ab -n 1000 -c 5 http://nodejs.org/
+ 1175  ab -n 1000 -c 5 http://railsfactory.com
+ 1176  ab -n 1000 -c 5 http://railsfactory.com/
+ 1177  exit
+ 1178  ls
+ 1179  cd Sand-Box/Research-Work/
+ 1180  ls
+ 1181  cd NodeJs/
+ 1182  ls
+ 1183  node word-count.js 
+ 1184  node word-count.js word-count.js 
+ 1185  cd shoutbox/
+ 1186  ls
+ 1187  cd ..
+ 1188  ls
+ 1189  node static_file_server.js 
+ 1190  cd shoutbox/
+ 1191  ls
+ 1192  cd app/
+ 1193  ls
+ 1194  cd ..
+ 1195  ls
+ 1196  node boot.js 
+ 1197  node createdb.js 
+ 1198  cd app/
+ 1199  ls
+ 1200  node shoutRepository.js 
+ 1201  node model.js 
+ 1202  ls
+ 1203  node controller.js 
+ 1204  ls
+ 1205  cd ../../
+ 1206  ls
+ 1207  cd helloworld/
+ 1208  ls
+ 1209  node hello_world_server.js 
+ 1210  exit
+ 1211  sudo apt-get install w3c-markup-validator 
+ 1212  sudo gedit /etc/apache2/conf.d/w3c-markup-validator.conf 
+ 1213  sudo /etc/init.d/apache2 restart
+ 1214  sudo gedit /etc/apache2/apache2.conf 
+ 1215  sudo /etc/init.d/apache2 restart
+ 1216  sudo /etc/init.d/apache2 stop
+ 1217  sudo apt-get remove w3c-markup-validator 
+ 1218  sudo apt-get update 
+ 1219  sudo apt-get upgrade 
+ 1220  sudo /etc/init.d/apache2 start
+ 1221  sudo gedit /etc/apache2/apache2.conf 
+ 1222  sudo /etc/init.d/apache2 start
+ 1223  ab -n 1000 -c 5 http://geexhq.com/
+ 1224  cd /var/www/stable/v170/
+ 1225  ls
+ 1226  cd cgi-bin/
+ 1227  ls
+ 1228  cd webnotes/
+ 1229  ls
+ 1230  gedit defs.py
+ 1231  ls
+ 1232  sudo chmod 777 -R accounts.sql 
+ 1233  ls -l
+ 1234  gedit accounts.sql 
+ 1235  cd /var/www/stable/
+ 1236  ls
+ 1237  cd ..
+ 1238  rsync stable mahendra@192.168.1.31:/home/mahendra/
+ 1239  rsync stable mahendra-rajan@192.168.1.31:/home/mahendra/
+ 1240  sudo rsync stable mahendra-rajan@192.168.1.31:/home/mahendra/
+ 1241  sudo rsync -av stable mahendra-rajan@192.168.1.31:/home/mahendra/
+ 1242  sudo su
+ 1243  sudo rsync -av stable mahendra-rajan@192.168.1.31:/home/mahendra-rajan/
+ 1244  cd 
+ 1245  ls
+ 1246  sudo rsync -av accounts.sql mahendra-rajan@192.168.1.31:/home/mahendra-rajan/
+ 1247  ls
+ 1248  history 
+ 1249  history | grep mysql
+ 1250  cd /var/lib/mysql/
+ 1251  sudo su
+ 1252  mysqldump -u root -p root accounts > /home/ranjith/accounts.sql
+ 1253  sudo mysqldump -u root -p root accounts > /home/ranjith/accounts.sql
+ 1254  sudo mysqldump -u root -p
+ 1255  sudo su
+ 1256  ls
+ 1257  sudo mysqldump -u accounts -p accounts --databases accounts > /home/ranjith/accounts.sql
+ 1258  ls -l
+ 1259  sudo gedit accounts.sql 
+ 1260  sudo chown ranjith accounts.sql 
+ 1261  ls -l
+ 1262  exit
+ 1263  cd 
+ 1264  rsync -av /var/www/stable/ /home/ranjith/stable/
+ 1265  history 

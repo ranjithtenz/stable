@@ -1,0 +1,1 @@
+[{'modified_by': 'Administrator', 'name': 'Bosnia and Herzegovina', 'parent': None, 'country': None, 'creation': '2010-04-15 13:41:42', 'modified': '2010-04-15 13:41:42', 'module': 'Setup Masters', 'doctype': 'Country', 'idx': None, 'parenttype': '', 'country_name': 'Bosnia and Herzegovina', 'owner': 'Administrator', 'docstatus': 0, 'parentfield': ''}]

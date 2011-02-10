@@ -1,0 +1,1 @@
+[{'modified_by': 'Administrator', 'name': 'Delhi', 'parent': None, 'country': 'India', 'creation': '2010-04-15 14:23:23', 'modified': '2010-04-15 14:23:23', 'module': 'Setup Masters', 'doctype': 'State', 'state_name': 'Delhi', 'idx': None, 'parenttype': None, 'owner': 'Administrator', 'docstatus': 0, 'parentfield': None}]

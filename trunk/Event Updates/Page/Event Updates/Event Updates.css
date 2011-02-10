@@ -1,0 +1,39 @@
+.hm_pg_title { 
+  font-size: 16px; 
+  color: #446; 
+  background-color: #FFF;
+  font-weight: bold; 
+  padding: 4px 2px;
+  color: #000;
+  border-bottom: 1px solid #AAA;
+}
+.hm_pg_title td {
+  vertical-align: middle;
+}
+.tab { width:100%;}
+#birthday_area {
+  display: none;
+  padding: 4px;
+  margin-bottom: 8px;
+  background-color: #FDD;
+  padding: 4px;
+  color: #644;
+}
+.div_pad{
+  padding:8px;
+}
+.div_font{
+  font-weight:bold;
+  margin-bottom:4px;
+}
+
+.pr{
+  width:12px;
+  height:12px;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  cursor:pointer;
+  text-align:center;
+  color:#f6f6f6;
+  font-size:9px
+}

@@ -1,0 +1,1 @@
+[{'modified_by': 'Administrator', 'name': 'RMB', 'parent': None, 'creation': '2009-03-26 10:25:52', 'modified': '2009-03-26 10:25:52', 'module': 'Setup Masters', 'doctype': 'Currency', 'currency_name': 'RMB', 'idx': None, 'parenttype': None, 'owner': 'Administrator', 'docstatus': 0, 'parentfield': None}]

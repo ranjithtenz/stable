@@ -1,0 +1,1 @@
+[{'modified_by': 'Administrator', 'name': 'North Korea', 'parent': None, 'country': None, 'creation': '2010-04-15 15:03:20', 'modified': '2010-04-15 15:03:20', 'module': 'Setup Masters', 'doctype': 'Country', 'idx': None, 'parenttype': None, 'country_name': 'North Korea', 'owner': 'Administrator', 'docstatus': 0, 'parentfield': None}]

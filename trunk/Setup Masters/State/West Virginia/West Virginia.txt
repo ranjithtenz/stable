@@ -1,0 +1,1 @@
+[{'modified_by': 'Administrator', 'name': 'West Virginia', 'parent': None, 'country': 'United States', 'creation': '2010-04-15 14:19:16', 'modified': '2010-04-15 14:19:16', 'module': 'Setup Masters', 'doctype': 'State', 'state_name': 'West Virginia', 'idx': None, 'parenttype': '', 'owner': 'Administrator', 'docstatus': 0, 'parentfield': ''}]

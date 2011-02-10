@@ -1,0 +1,272 @@
+#!/usr/bin/python
+# Copyright 2010 BeeSeek Developers.  This software is licensed under the
+# GNU General Public License version 3 (see the file LICENSE).
+
+"""Lint utility Originally written for  BeeSeek project(http://www.beeseek.org/). Only borrowed over here.
+
+This script runs three different lint tools (PyFlakes, DjangoLint and PyLint)
+and outputs warnings in a clear and unified manner.
+"""
+
+import linecache
+import os
+import subprocess
+import sys
+from abc import ABCMeta, abstractmethod, abstractproperty
+from distutils import filelist
+
+
+# Colour output if possible.
+if sys.stdout.isatty():
+    WARNING_TEMPLATE = (
+        '\033[35m{0}\033[0m line \033[32m{1}\033[0m{2}: \033[0m{3}\033[0m')
+    FUNCTION_TEMPLATE = ' in \033[34m{0}\033[0m'
+else:
+    WARNING_TEMPLATE = '{0} line {1}{2}: {3}'
+    FUNCTION_TEMPLATE = ' in {0}'
+
+class LintTool(object):
+    """Abstract base class for all lint tools.
+
+    Classes that inherit from this should define the attribute `args` and the
+    methdo `parse_warning`. The attribute represents the arguments list that
+    should be used to call the subprocess. The method is used to parse the
+    output lines read from the lint tool.
+
+    If the application is not installed on the system or if it can't be started
+    for other reasons, a warning is displayed and the `skip` attribute is set
+    to `True`.
+
+    Use the `run` method to print warnings to stdout.
+    """
+    __metaclass__ = ABCMeta
+
+    @abstractproperty
+    def args(self):
+        """The arguments used to call the lint tool."""
+
+    def __init__(self, modules, recursive=True):
+        """Initialize the class and run the process in the backgroud."""
+        # Some tools do not recursively look into packages. We need to provide
+        # them a list of .py files.
+        if recursive:
+            files = []
+            for module_name in modules:
+                if os.path.isdir(module_name):
+                    files.extend(
+                        name for name in filelist.findall(module_name)
+                        if name.endswith('.py'))
+                else:
+                    files.append(module_name)
+            args = self.args + tuple(files)
+        else:
+            args = self.args + tuple(modules)
+
+        try:
+            self.pipe = subprocess.Popen(
+                args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        except OSError, exc:
+            exec_name = os.path.split(sys.argv[0])[1]
+            print >> sys.stderr, '{0}: warning: Cannot run {1}: {2[1]}'.format(
+                exec_name, self.__class__.__name__, exc.args)
+            self.skip = True
+        else:
+            self.skip = False
+
+    def run(self):
+        """Print the warnings to stdout and return the number of lines printed.
+        """
+        warnings_count = 0
+        for line in self.pipe.stdout:
+            warning = self.parse_warning(line.rstrip())
+            if warning is None:
+                continue
+            file_name, line_number, function, warning = warning
+            if not self.ignore(file_name, line_number, warning):
+                function = (
+                    FUNCTION_TEMPLATE.format(function)
+                    if function is not None else '')
+                print WARNING_TEMPLATE.format(
+                    file_name, line_number, function, warning.strip())
+                warnings_count += 1
+        return warnings_count
+
+    @abstractmethod
+    def parse_warning(self, line):
+        """Parse a message from the lint tool and return a three-items tuple in
+        the format (file_name, line_number, function_name, warning_text).
+
+        If the given line is unuseful, this function should return None.
+        """
+
+    def ignore(self, file_name, line_number, message): #lint:ignore
+        """Check if a warning should be ignored or displayed to the user.
+
+        This is done by checking if a comment containing '#lint:ignore' is
+        present on the same line or on the line above.
+        """
+        same_line = linecache.getline(file_name, line_number).rstrip()
+        line_above = linecache.getline(file_name, line_number-1).rstrip()
+        if (same_line.endswith('#lint:ignore')
+            or line_above.endswith('#lint:ignore')):
+            return True
+        elif line_number == 1 and 'Invalid name' in message and (
+            file_name == 'node/beeseek-node' or
+            file_name.startswith('tools/')):
+            # Some tools complain about the fact that some scripts have a bad
+            # name, but actually the names are right (they are not meant to be
+            # imported).
+            return True
+        else:
+            return False
+
+
+class PyFlakes(LintTool):
+    """`LintTool` object for PyFlakes."""
+
+    args = ('pyflakes',)
+
+    def parse_warning(self, line):
+        """See `LintTool`."""
+        file_name, line_number, warning = line.split(':', 2)
+        if warning.endswith('unable to detect undefined names'):
+            # This isn't a warning, but a PyFlakes limitation.
+            return None
+        return file_name, int(line_number), '', warning
+
+
+class PyLint(LintTool):
+    """`LintTool` object for PyLint."""
+
+    args = ('pylint',
+        # Make the output parseable.
+        '--output-format=parseable', '--reports=no',
+        # Set the maximum line length to 79 instead of 80 (so it's easier to
+        # read diffs in the terminal).
+        '--max-line-length=79',
+        # Increase the number of branches.
+        '--max-branchs=15',
+        # Increase a bit the number of similar lines.
+        '--min-similarity-lines=5',
+        # Allow variable names like `fp` and `fd` and long method names.
+        '--argument-rgx=[a-z_][a-z0-9_]{1,50}$',
+        '--attr-rgx=[a-z_][a-z0-9_]{1,50}$',
+        '--method-rgx=[a-z_][a-z0-9_]{1,50}$',
+        '--variable-rgx=[a-z_][a-z0-9_]{1,50}$',
+        # Be less restrictive for global variable names.
+        '--const-rgx='
+            '(([A-Z_][A-Z0-9_]*)|[A-Z_][a-zA-Z0-9]+|[a-z_][a-z0-9_]+)$',
+        # Ingore "Class 'Model-Name' has no 'objects' member" errors.
+        '--generated-members=objects',
+
+        # Disable messages that are not considered errors.
+        '--disable-msg='
+            'E1101,' # Object has no %s member.
+            'E1103,' # Object has no %s member.
+            'F0401,' # Unable to import %r (%s).
+            'R0201,' # Method could be a function.
+            'R0903,' # Too few public methods.
+            'R0904,' # Too many public methods.
+            'R0911,' # Too many return statements (%s/%s).
+            'R0912,' # Too many branches.
+            'R0913,' # Too many arguments.
+            'R0914,' # Too many local variables.
+            'W0142,' # Used * or ** magic.
+            'W0221,' # Arguments number differs from %s method.
+            'W0232,' # Class has no __init__ method.
+            'W0511,' # TODOs and FIXMEs.
+            'W0603,' # Using the global statement.
+            'W0703,' # Catch "Exception".
+            'W0704,' # Except doesn't do anything.
+        )
+
+    def parse_warning(self, line):
+        """See `LintTool`."""
+        if line.startswith(' '):
+            # Line starting with a blank space shouldn't be parsed.
+            return None
+        file_name, line_number, warning = line.split(':', 2)
+#        print line
+        info = warning[warning.find('[')+1:warning.find(']')].split(',')
+        function = info[1].strip() if len(info) >= 2 else None
+        warning = warning[warning.find(']')+1:]
+        return file_name, int(line_number), function, warning
+
+    def ignore(self, file_name, line_number, message):
+        """See `LintTool`."""
+        if (file_name.endswith('/views.py')
+            and message.endswith("Unused argument 'request'")):
+            # All views require the `request` argument, also if it is not used.
+            return True
+        return super(PyLint, self).ignore(file_name, line_number, message)
+
+
+class DjangoLint(LintTool):
+    """Linter for DjangoLint."""
+
+    args = ('django-lint',)
+
+    def __init__(self, modules):
+        super(DjangoLint, self).__init__(modules, recursive=False)
+        self.file_name = None
+
+    def parse_warning(self, line):
+        """See `LintTool`."""
+        if line.startswith('*'):
+            # Here the linter is about to parse a new module.
+            self.file_name = line.split()[-1].replace('.', '/')
+            self.file_name += '.py'
+            return None
+        elif line.startswith(' '):
+            # Line starting with a blank space shouldn't be parsed.
+            return None
+        else:
+            line_number, warning = line.split(':', 2)[1:]
+            if ': ' in warning:
+                function, warning = warning.split(': ', 1)
+            else:
+                function = None
+            return self.file_name, int(line_number), function, warning
+
+
+def lint_code():
+    """Lint Python modules using the lint tools installed.
+
+    If no arguments are given, all the Python scripts will be checked.
+    """
+    modules = ['model/code','model/doc','model/doctype','model/meta','model/doclist','model/import_docs','model/modules','utils/archive','utils/backups','utils/email_lib','utils/encrypt','utils/jsmin','utils/nestedset','utils/sitemap','utils/transfer','utils/webservice','widgets/event','widgets/form','widgets/menus','widgets/page_body','widgets/page','widgets/query_builder','widgets/search','widgets/search','db','auth','defs','handler','profile','session_cache',]
+    # Look for Python files in the `tools` and `tests` directories.
+    curdir = os.getcwd()
+    for file_name in os.listdir(curdir):
+        file_name = os.path.join(curdir , file_name)
+        if os.path.isfile(file_name):
+            if (file_name.endswith('.py') or
+                open(file_name).readline() == '#!/usr/bin/python\n'):
+                modules.append(file_name)
+    for curdir, _, file_list in os.walk(curdir):
+        for file_name in file_list:
+            if file_name.endswith('.py'):
+                modules.append(os.path.join(curdir, file_name))
+
+    # Initialize the instances now so that the backend applications can start
+    # up and save some time.
+#    os.environ['PYTHONPATH'] = 'node'
+    tools = (
+        PyFlakes(modules),
+        DjangoLint(modules[:1]),
+        PyLint(modules)) # Some setting problem with format model/*.py doesn't work.
+#        )
+    # Display the results from the tools.
+    warnings = 0
+    for tool in tools:
+        if tool.skip:
+            continue
+        warnings += tool.run()
+    if warnings:
+        print 'Total warnings:', warnings
+    else:
+        print 'No errors found'
+    sys.exit(1 if warnings else 0)
+
+if __name__ == '__main__':
+    lint_code()

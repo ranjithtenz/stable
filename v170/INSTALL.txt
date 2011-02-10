@@ -1,0 +1,67 @@
+INSTALL.txt
+===========
+
+Web Notes Framework Installation guide
+
+Web Notes Framework (WNF) is a meta-data driven web app framework. After install, you build
+and configure your application from the web browser.
+
+WNF requires the following applications
+
+1. Python
+2. MySQL
+3. MySQL-Python (connector)
+4. simplejson (for Python 2.4 or lower)
+5. email (for Python 2.4 or lower)
+6. pytz (easy_install pytz)
+7. Apache
+8. PIL (optional - for image processing (thumbnails etc) 
+	- yum install libjpeg-devel
+	- yum install python-imaging
+	)
+
+------------------------------------------------------------------------
+1. Configuring Apache
+
+a. You must set Apache to execute index.cgi file, one way to do this is to add cgi handler
+   and add ExecCGI in the options directive.
+
+b. You can also add couple of lines below to block Apache from rendering .py files
+
+   RewriteEngine on
+   RewriteRule \.py - [F]
+
+c. Add "index.cgi" to DirectoryIndex
+
+
+------------------------------------------------------------------------
+2. Setup your MySQL passwords
+
+Set your root password in the file
+cgi-bin/webnotes/defs.py
+
+
+------------------------------------------------------------------------
+3. Setting up your first app
+
+The first app in your server must also act as a directory for all other apps on your server.
+Hence we call this app "accounts". To setup the accounts app, you must first set your MySQL password
+
+Run the setup file in the cgi-bin folder, or run the following form the python shell
+
+import webnotes
+import setup
+
+setup.import_db('Framework','accounts')
+setup.create_account_doctype()
+
+------------------------------------------------------------------------
+4. Login to application
+
+Start Apache, go to your web-browser and point to the folder where you installed the framework
+
+The default logins are:
+
+login: Administrator
+password: admin
+

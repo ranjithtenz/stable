@@ -1,0 +1,1 @@
+[{'modified_by': 'Administrator', 'name': 'India', 'parent': None, 'country': None, 'creation': '2010-04-03 17:29:31', 'modified': '2010-04-03 17:29:31', 'module': 'Setup Masters', 'doctype': 'Country', 'idx': None, 'parenttype': None, 'country_name': 'India', 'owner': 'Administrator', 'docstatus': 0, 'parentfield': None}]

@@ -1,0 +1,1 @@
+[{'modified_by': 'Administrator', 'name': 'JPY', 'parent': None, 'creation': '2009-03-25 10:58:22', 'modified': '2009-03-25 10:58:22', 'module': 'Setup Masters', 'doctype': 'Currency', 'currency_name': 'JPY', 'idx': None, 'parenttype': None, 'owner': 'Administrator', 'docstatus': 0, 'parentfield': None}]

@@ -1,0 +1,1 @@
+[{'modified_by': 'saumil@webnotestech.com', 'name': 'SGD', 'parent': None, 'creation': '2010-05-10 12:42:41', 'modified': '2010-05-10 12:42:41', 'module': 'Setup Masters', 'doctype': 'Currency', 'currency_name': 'SGD', 'idx': None, 'parenttype': None, 'owner': 'saumil@webnotestech.com', 'docstatus': 0, 'parentfield': None}]

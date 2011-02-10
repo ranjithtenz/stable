@@ -1,0 +1,1 @@
+[{'modified_by': 'Administrator', 'name': 'Wyoming', 'parent': None, 'country': 'United States', 'creation': '2010-04-15 14:19:16', 'modified': '2010-04-15 14:19:16', 'module': 'CRM', 'doctype': 'State', 'state_name': 'Wyoming', 'idx': None, 'parenttype': '', 'owner': 'Administrator', 'docstatus': 0, 'parentfield': ''}]

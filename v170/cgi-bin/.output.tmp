@@ -1,0 +1,283 @@
+listing directory '/public_html/' 
+<connecting to webnotesframework.org..clock offset: -19802> [22 items]: 
+.......d.d.d..d..d....
+listing directory '/public_html/backups' 
+[1 items]: 
+<checking integrity [1 directories]> 
++ <using '/public_html/backups/.listing'>
+listing directory '/public_html/cgi-bin' 
+[13 items]: 
+.............
+<uploaded '/public_html/cgi-bin/.listing'>
+listing directory '/public_html/css' 
+[4 items]: 
+..d.
+listing directory '/public_html/css/img_inquisitor' 
+[19 items]: 
+...................
+<uploaded '/public_html/css/img_inquisitor/.listing'>
+<uploaded '/public_html/css/.listing'>
+listing directory '/public_html/images' 
+[6 items]: 
+<checking integrity [7 directories]> 
++++ <missing '/public_html/images/chaticons/.listing', forcing regeneration of '/public_html/images/.listing'>
+.ddddd
+listing directory '/public_html/images/chaticons' 
+[7 items]: 
+.......
+<uploaded '/public_html/images/chaticons/.listing'>
+listing directory '/public_html/images/icons' 
+[104 items]: 
+........................................................................................................
+<uploaded '/public_html/images/icons/.listing'>
+listing directory '/public_html/images/logos' 
+[4 items]: 
+<checking integrity [1 directories]> 
++ <using '/public_html/images/logos/.listing'>
+listing directory '/public_html/images/ui' 
+[19 items]: 
+<checking integrity [2 directories]> 
+++ <using '/public_html/images/ui/.listing'>
+listing directory '/public_html/images/user' 
+[1 items]: 
+<checking integrity [1 directories]> 
++ <using '/public_html/images/user/.listing'>
+<uploaded '/public_html/images/.listing'>
+listing directory '/public_html/js' 
+[9 items]: 
+<checking integrity [2 directories]> 
+++ <using '/public_html/js/.listing'>
+<uploaded '/public_html/.listing'>
+Skipping downloading: 103uploading 'cgi-bin/handler.py' [44877]..
+<removing '/public_html/cgi-bin/.listing'>
+<creating 'cgi-bin/handler.py.backup'>
+<storing>
+<cleaning up 'cgi-bin/handler.py.backup'>
+ ok
+uploading 'images/icons/lightbulb.png' [782]..
+<removing '/public_html/images/icons/.listing'>
+<creating 'images/icons/lightbulb.png.backup'>
+<storing>
+<cleaning up 'images/icons/lightbulb.png.backup'>
+ ok
+uploading 'images/icons/lock.png' [749]..
+<creating 'images/icons/lock.png.backup'>
+<storing>
+<cleaning up 'images/icons/lock.png.backup'>
+ ok
+uploading 'images/icons/lock_open.png' [727]..
+<creating 'images/icons/lock_open.png.backup'>
+<storing>
+<cleaning up 'images/icons/lock_open.png.backup'>
+ ok
+uploading 'images/icons/lorry.png' [582]..
+<creating 'images/icons/lorry.png.backup'>
+<storing>
+<cleaning up 'images/icons/lorry.png.backup'>
+ ok
+uploading 'images/icons/magnifier.gif' [568]..
+<creating 'images/icons/magnifier.gif.backup'>
+<storing>
+<cleaning up 'images/icons/magnifier.gif.backup'>
+ ok
+uploading 'images/icons/magnifier.png' [615]..
+<creating 'images/icons/magnifier.png.backup'>
+<storing>
+<cleaning up 'images/icons/magnifier.png.backup'>
+ ok
+uploading 'images/icons/map.png' [804]..
+<creating 'images/icons/map.png.backup'>
+<storing>
+<cleaning up 'images/icons/map.png.backup'>
+ ok
+uploading 'images/icons/minus.gif' [82]..
+<creating 'images/icons/minus.gif.backup'>
+<storing>
+<cleaning up 'images/icons/minus.gif.backup'>
+ ok
+uploading 'images/icons/money.png' [738]..
+<creating 'images/icons/money.png.backup'>
+<storing>
+<cleaning up 'images/icons/money.png.backup'>
+ ok
+uploading 'images/icons/monitor.png' [612]..
+<creating 'images/icons/monitor.png.backup'>
+<storing>
+<cleaning up 'images/icons/monitor.png.backup'>
+ ok
+uploading 'images/icons/new.png' [378]..
+<creating 'images/icons/new.png.backup'>
+<storing>
+<cleaning up 'images/icons/new.png.backup'>
+ ok
+uploading 'images/icons/note.gif' [588]..
+<creating 'images/icons/note.gif.backup'>
+<storing>
+<cleaning up 'images/icons/note.gif.backup'>
+ ok
+uploading 'images/icons/note.png' [500]..
+<creating 'images/icons/note.png.backup'>
+<storing>
+<cleaning up 'images/icons/note.png.backup'>
+ ok
+uploading 'images/icons/package.png' [853]..
+<creating 'images/icons/package.png.backup'>
+<storing>
+<cleaning up 'images/icons/package.png.backup'>
+ ok
+uploading 'images/icons/page.gif' [1068]..
+<creating 'images/icons/page.gif.backup'>
+<storing>
+<cleaning up 'images/icons/page.gif.backup'>
+ ok
+uploading 'images/icons/page.png' [635]..
+<creating 'images/icons/page.png.backup'>
+<storing>
+<cleaning up 'images/icons/page.png.backup'>
+ ok
+uploading 'images/icons/page_add.gif' [1070]..
+<creating 'images/icons/page_add.gif.backup'>
+<storing>
+<cleaning up 'images/icons/page_add.gif.backup'>
+ ok
+uploading 'images/icons/page_add.png' [739]..
+<creating 'images/icons/page_add.png.backup'>
+<storing>
+<cleaning up 'images/icons/page_add.png.backup'>
+ ok
+uploading 'images/icons/page_copy.gif' [1041]..
+<creating 'images/icons/page_copy.gif.backup'>
+<storing>
+<cleaning up 'images/icons/page_copy.gif.backup'>
+ ok
+uploading 'images/icons/page_copy.png' [663]..
+<creating 'images/icons/page_copy.png.backup'>
+<storing>
+<cleaning up 'images/icons/page_copy.png.backup'>
+ ok
+uploading 'images/icons/page_error.png' [793]..
+<creating 'images/icons/page_error.png.backup'>
+<storing>
+<cleaning up 'images/icons/page_error.png.backup'>
+ ok
+uploading 'images/icons/page_excel.gif' [1060]..
+<creating 'images/icons/page_excel.gif.backup'>
+<storing>
+<cleaning up 'images/icons/page_excel.gif.backup'>
+ ok
+uploading 'images/icons/page_excel.png' [817]..
+<creating 'images/icons/page_excel.png.backup'>
+<storing>
+<cleaning up 'images/icons/page_excel.png.backup'>
+ ok
+uploading 'images/icons/page_refresh.gif' [1076]..
+<creating 'images/icons/page_refresh.gif.backup'>
+<storing>
+<cleaning up 'images/icons/page_refresh.gif.backup'>
+ ok
+uploading 'images/icons/page_refresh.png' [858]..
+<creating 'images/icons/page_refresh.png.backup'>
+<storing>
+<cleaning up 'images/icons/page_refresh.png.backup'>
+ ok
+uploading 'images/icons/palette.png' [856]..
+<creating 'images/icons/palette.png.backup'>
+<storing>
+<cleaning up 'images/icons/palette.png.backup'>
+ ok
+uploading 'images/icons/paperclip.gif' [384]..
+<creating 'images/icons/paperclip.gif.backup'>
+<storing>
+<cleaning up 'images/icons/paperclip.gif.backup'>
+ ok
+uploading 'images/icons/phone.png' [488]..
+<creating 'images/icons/phone.png.backup'>
+<storing>
+<cleaning up 'images/icons/phone.png.backup'>
+ ok
+uploading 'images/icons/photo.png' [589]..
+<creating 'images/icons/photo.png.backup'>
+<storing>
+<cleaning up 'images/icons/photo.png.backup'>
+ ok
+uploading 'images/icons/plus.gif' [85]..
+<creating 'images/icons/plus.gif.backup'>
+<storing>
+<cleaning up 'images/icons/plus.gif.backup'>
+ ok
+uploading 'images/icons/printer.gif' [1035]..
+<creating 'images/icons/printer.gif.backup'>
+<storing>
+<cleaning up 'images/icons/printer.gif.backup'>
+ ok
+uploading 'images/icons/printer.png' [731]..
+<creating 'images/icons/printer.png.backup'>
+<storing>
+<cleaning up 'images/icons/printer.png.backup'>
+ ok
+uploading 'images/icons/rainbow.png' [655]..
+<creating 'images/icons/rainbow.png.backup'>
+<storing>
+<cleaning up 'images/icons/rainbow.png.backup'>
+ ok
+uploading 'images/icons/report.png' [649]..
+<creating 'images/icons/report.png.backup'>
+<storing>
+<cleaning up 'images/icons/report.png.backup'>
+ ok
+uploading 'images/icons/resultset_first.gif' [553]..
+<creating 'images/icons/resultset_first.gif.backup'>
+<storing>
+<cleaning up 'images/icons/resultset_first.gif.backup'>
+ ok
+uploading 'images/icons/resultset_first.png' [522]..
+<creating 'images/icons/resultset_first.png.backup'>
+<storing>
+<cleaning up 'images/icons/resultset_first.png.backup'>
+ ok
+uploading 'images/icons/resultset_last.gif' [553]..
+<creating 'images/icons/resultset_last.gif.backup'>
+<storing>
+<cleaning up 'images/icons/resultset_last.gif.backup'>
+ ok
+uploading 'images/icons/resultset_last.png' [524]..
+<creating 'images/icons/resultset_last.png.backup'>
+<storing>
+<cleaning up 'images/icons/resultset_last.png.backup'>
+ ok
+uploading 'images/icons/resultset_next.gif' [303]..
+<creating 'images/icons/resultset_next.gif.backup'>
+<storing>
+<cleaning up 'images/icons/resultset_next.gif.backup'>
+ ok
+uploading 'images/icons/resultset_next.png' [395]..
+<creating 'images/icons/resultset_next.png.backup'>
+<storing>
+<cleaning up 'images/icons/resultset_next.png.backup'>
+ ok
+uploading 'images/icons/resultset_previous.gif' [304]..
+<creating 'images/icons/resultset_previous.gif.backup'>
+<storing>
+<cleaning up 'images/icons/resultset_previous.gif.backup'>
+ ok
+uploading 'images/icons/resultset_previous.png' [389]..
+<creating 'images/icons/resultset_previous.png.backup'>
+<storing>
+<cleaning up 'images/icons/resultset_previous.png.backup'>
+ ok
+uploading 'images/icons/script.png' [748]..
+<creating 'images/icons/script.png.backup'>
+<storing>
+<cleaning up 'images/icons/script.png.backup'>
+ ok
+uploading 'images/icons/server.png' [530]..
+<creating 'images/icons/server.png.backup'>
+<storing>
+<cleaning up 'images/icons/server.png.backup'>
+ ok
+uploading 'images/icons/shield.png' [702]..
+<creating 'images/icons/shield.png.backup'>
+<storing>
+<cleaning up 'images/icons/shield.png.backup'>
+ ok
+uploading 'images/icons/sort_asc.gif' [335]..

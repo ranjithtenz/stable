@@ -1,0 +1,1 @@
+[{'modified_by': 'harshada@webnotestech.com', 'name': 'Dalian', 'parent': None, 'country': 'China', 'creation': '2010-05-26 14:42:50', 'modified': '2010-05-26 14:42:50', 'module': 'CRM', 'doctype': 'State', 'state_name': 'Dalian', 'idx': None, 'parenttype': '', 'owner': 'harshada@webnotestech.com', 'docstatus': 0, 'parentfield': ''}]

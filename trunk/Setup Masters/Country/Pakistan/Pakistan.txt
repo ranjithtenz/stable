@@ -1,0 +1,1 @@
+[{'modified_by': 'jai@webnotestech.com', 'name': 'Pakistan', 'parent': None, 'country': None, 'creation': '2009-12-15 17:33:39', 'modified': '2009-12-15 17:33:39', 'module': 'Setup Masters', 'doctype': 'Country', 'idx': None, 'parenttype': None, 'country_name': 'Pakistan', 'owner': 'jai@webnotestech.com', 'docstatus': 0, 'parentfield': None}]

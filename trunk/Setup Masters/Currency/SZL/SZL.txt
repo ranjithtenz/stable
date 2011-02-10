@@ -1,0 +1,1 @@
+[{'modified_by': 'Administrator', 'name': 'SZL', 'parent': None, 'creation': '2010-04-15 14:17:20', 'modified': '2010-04-15 14:17:20', 'module': 'Setup Masters', 'doctype': 'Currency', 'currency_name': 'SZL', 'idx': None, 'parenttype': '', 'owner': 'Administrator', 'docstatus': 0, 'parentfield': ''}]

@@ -1,0 +1,1 @@
+[{'modified_by': 'Administrator', 'name': 'EURO', 'parent': None, 'creation': '2010-11-29 11:53:45', 'modified': '2010-11-29 11:53:45', 'module': 'Setup Masters', 'doctype': 'Currency', 'currency_name': 'EURO', 'idx': None, 'parenttype': None, 'owner': 'Administrator', 'docstatus': 0, 'parentfield': None}]

@@ -1,0 +1,1 @@
+[{'modified_by': 'Administrator', 'name': 'Yemen', 'parent': None, 'country': None, 'creation': '2010-04-15 13:41:43', 'modified': '2010-04-15 13:41:43', 'module': 'Setup Masters', 'doctype': 'Country', 'idx': None, 'parenttype': '', 'country_name': 'Yemen', 'owner': 'Administrator', 'docstatus': 0, 'parentfield': ''}]

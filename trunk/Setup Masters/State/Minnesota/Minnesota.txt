@@ -1,0 +1,1 @@
+[{'modified_by': 'Administrator', 'name': 'Minnesota', 'parent': None, 'country': 'United States', 'creation': '2010-04-15 14:19:16', 'modified': '2010-04-15 14:19:16', 'module': 'Setup Masters', 'doctype': 'State', 'state_name': 'Minnesota', 'idx': None, 'parenttype': '', 'owner': 'Administrator', 'docstatus': 0, 'parentfield': ''}]
